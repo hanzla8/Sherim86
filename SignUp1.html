@@ -1,0 +1,230 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Sign Up 1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./images/fav.jpg" type="image/x-icon">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="script.js">
+    <!-- fontawasome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- phone code -->
+    <link rel="stylesheet" href="./build/css/demo.css" rel="stylesheet">
+    <link rel="stylesheet" href="./build/css/intlTelInput.css" rel="stylesheet">
+
+    <style>
+        body {
+            overflow-x: hidden;
+            background: #f8f7f7;
+        }
+
+        .main_card {
+            max-width: 80%;
+            height: auto;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 2px 5px 8px black;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid #1aa3ff;
+
+        }
+
+        /* Circular button styles */
+        .circular-button {
+            width: 120px;
+            height: 120px;
+            background-color: #1aa3ff;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 120px;
+            cursor: pointer;
+        }
+
+        /* File input styles - hide it visually */
+        #imageInput {
+            display: none;
+        }
+
+        #sign-btn {
+            background-color: #1aa3ff;
+            border: 1px solid #1aa3ff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main>
+
+        <div class="container">
+            <div class="row">
+
+                <!-- Form Control start CreateForm -->
+                <form class="p-5">
+
+                    <div class="main_card p-3 mx-auto">
+                        <div class="main-head">
+                            <h5 class="text-center">SHERIM BAŞVURU</h5>
+
+                            <div class="row">
+                                <!-- Image col -->
+                                <div class="col-md-6 offset-md-3 text-center">
+                                    <!-- Label for the file input -->
+                                    <label class="circular-button" for="imageInput">
+                                        <i class="fa-solid fa-user"></i>
+                                        <i id="icon-plus" class="fa-solid fa-plus"></i>
+                                    </label>
+                                    <!-- Input field for selecting an image -->
+                                    <input type="file" id="imageInput" accept="image/*">
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="dropdown open form-control">
+                                        <button class="btn btn dropdown-toggle" type="button" id="triggerId"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Record Type
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                            <a class="dropdown-item active" href="SignUp1.html">Individual</a>
+                                            <a class="dropdown-item" href="SignUp2.html">Institutional</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label class="form-label">Registration Preference</label>
+                                    <select class="form-select text-Black" id="White">
+                                        <option value="option1">Select</option>
+                                        <option value="option2">Puplisher</option>
+                                        <option value="option3">Advertising</option>
+                                    </select>
+									</div>
+                             <div class="form-group col-lg-4">
+                                    <label class="form-label">Channel Preference</label>
+                                    <select class="form-select text-Black" id="White">
+                                        <option value="option1">Select</option>
+                                        <option value="option2">Phenomenon</option>
+                                        <option value="option3">TV</option>
+										<option value="option4">Newspaper</option>
+										<option value="option5">Radio</option>
+										<option value="option5">Google Ads</option>
+										<option value="option5">Web</option>
+                                    </select>
+									</div>
+									
+                                </div>
+                            <!-- Second Row -->
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label for="input4">Name-Surname</label>
+                                    <input type="text" class="form-control" id="input4">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label class="form-label">Area</label>
+                                    <select class="form-select text-Black" id="white">
+                                        <option value="option1">Select</option>
+                                        <option value="option2">EU</option>
+                                        <option value="option3">TR</option>
+                                        <option value="option4">US</option>
+                                        <option value="option5">AS</option>
+										<option value="option6">AFK</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label for="input5">Country</label>
+                                    <input type="text" class="form-control" id="input5">
+                                </div>
+
+                                <div class="form-group col-lg-4">
+                                    <label for="input6">City</label>
+                                    <input type="text" class="form-control" id="input6">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label">Telephone</label>
+                                    <input type="tel" class="form-control" placeholder="+48 545 323 545" id="phone">
+                                </div>
+
+                                <div class="form-group col-lg-12">
+                                    <label for="input8">Address</label>
+                                    <input type="text" class="form-control" id="input8">
+                                </div>
+
+                                <div class="form-group col-lg-4">
+                                    <label for="input9">Citizenship No</label>
+                                    <input type="number" class="form-control" id="input9">
+                                </div>
+
+                                <div class="form-group col-lg-4">
+                                    <label for="input10">Bank Name</label>
+                                    <input type="text" class="form-control" id="input10">
+                                </div>
+
+                                <div class="form-group col-lg-4">
+                                    <label for="input11">IBAN</label>
+                                    <input type="text" class="form-control" id="input11">
+                                </div>
+
+                                <div class="form-group col-lg-4">
+                                    <label for="input12">Currency</label>
+                                    <input type="text" class="form-control" id="input12">
+                                </div>
+
+                                <div class="form-group col-lg-4">
+                                    <label for="input13">User Mail</label>
+                                    <input type="email" class="form-control" id="input13">
+                                </div>
+
+                                <div class="form-group col-lg-4">
+                                    <label for="input14">Password</label>
+                                    <input type="password" class="form-control" id="input14">
+                                </div>
+                            </div><br>
+                            <div class="text-center">
+                                <a id="sign-btn" class="btn btn-danger mx-auto"> Send</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="text-center">
+                <p>Not: Gönder Butununa basıldıktan sonra Yen ekranda</p>
+                <p style="color: #ff1ae0; font-weight: 600;">Teprkler Sherm Başvurunuz Alınmıştır. 48 Saat çnde Aktvasyon çn bldrm Alacaksınız.</p>
+                <p>yazısı çıkacak </p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js">
+    </script>
+
+    <!-- javascript Link -->
+    <script src="script.js"></script>
+    <script src="./build/js/intlTelInput.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input,{});
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1705 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>ADD Channel</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+  <!-- Style css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./images/fav.jpg" type="image/x-icon">
+
+
+  <!-- font awasome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    /* Content Line */
+    .first-line {
+      width: 100%;
+      height: 50px;
+      background-color: var(--color-body);
+      color: #fff;
+    }
+
+    /* Table Heading Line */
+    .table-line {
+      background-color: #C7C7C7;
+      color: #000000;
+      font-size: 10px;
+    }
+
+    #table-line {
+      color: #000000;
+      font-size: 10px;
+    }
+
+    .circular-button {
+      width: 40px;
+      height: 40px;
+      background-color: var(--color-body);
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+    }
+
+    /* File input styles - hide it visually */
+    #imageInput {
+      display: none;
+    }
+
+
+
+    /* it is our table section */
+    .scrollable-table2 {
+      width: 200%;
+      height: auto;
+      overflow: auto;
+      padding: 5px;
+    }
+
+    .input-size {
+      font-size: 12px;
+    }
+
+    .input-size label {
+      font-size: 12px;
+    }
+
+    .input-size input,
+    .input-size .form-select {
+      font-size: 12px;
+      border-radius: 10px;
+    }
+
+    #togler {
+      left: auto;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <!-- Second Seaction Starting Here-->
+  <div id="first-con" class="main-container d-flex">
+    <div class="sidebar" id="side_nav">
+      <div class="header-box">
+        <h1 class="fs-4 pt-2 text-center text-white"><a class="text-decoration-none text-white"
+            href="index.html">SHERIM</a>
+        </h1>
+        <div id="board-circle" class="mx-auto">
+          <h4 class="mx-auto text-center pt-5">Malldia</h4>
+        </div>
+        <button class="btn d-md-none offset-sm-10 d-block close-btn px-1 py-0 text-white"><i
+            class="fa-solid fa-bars-staggered"></i></button>
+      </div>
+
+      <div class="text-center pt-1">
+        <h6 class="text-white">EU/PL48/5475447</h6>
+        <p class="text-white">Elf Karanfil</p>
+      </div>
+
+      <!-- UL Li Scroller Table -->
+      <div class="scrollable-table1">
+        <ul class="list-unstyled px-2 py-3">
+          <!-- Sidebar Links -->
+          <li class=""><a href="BroadcastUsers.html" class="text-decoration-none text-white d-block"><i
+                class="fa-solid fa-bullhorn"></i>&nbsp;Broadcast users</a>
+          </li>
+
+          <li class=""><a href="CreateBrandTamplate.html" class="text-decoration-none text-white d-block"><i
+                class="fa-solid fa-font-awesome"></i>&nbsp; Create a Brand Template</a></li>
+          <li class=""><a href="DefineBrandTamplate.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-stack-overflow"></i> &nbsp; Define the Brand Template</a></li>
+
+          <li class=""><a href="AddChannel.html" class="text-decoration-none text-white d-block active"><i
+                class="fa-solid fa-shop"></i> &nbsp;Add Channel</a></li>
+
+          <li class=""><a href="CreateAdvertsngPackage.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-product-hunt"></i> &nbsp; Create Advertsng Package</a></li>
+          <li class=""><a href="ReadyAdvertisingPackages.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-unity"></i> &nbsp; Ready Advertsng Packages</a>
+          </li>
+          <li class=""><a href="AdvertsngPool.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-space-awesome"></i> &nbsp;Advertsng Pool</a></li>
+          <li class=""><a href="UploadAd.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-staylinked"></i> &nbsp; Upload Ad</a></li>
+
+
+          <li class=""><a href="IncomeOrder.html" class="text-decoration-none text-white d-block"><i
+                class="fa-solid fa-shop"></i> &nbsp;Incomng Order</a></li>
+
+          <li class=""><a href="IncomePaymentStatement.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-amazon-pay" class="text-decoration-none text-white d-block"></i> &nbsp;Incomng
+              Payments</a></li>
+          <li class=""><a href="Pending&Outing.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-patreon"></i>&nbsp; Pendng Transfer</a></li>
+          <li class=""><a href="#" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-first-order"></i>&nbsp;Orders</a></li>
+          <li class=""><a href="CostTable.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-sellcast"></i> &nbsp;Cost table</a></li>
+          <li class=""><a href="MalldiaSarimIncome.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-maxcdn"></i> &nbsp;Mallda Serhm Income</a></li>
+          <li class=""><a href="PublisherSerimIncome.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-cc-mastercard"></i> &nbsp;Publsher Serhm Income</a></li>
+          <li class=""><a href="AdvertisingExpence.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-linode"></i> &nbsp;Advertser Expenses</a></li>
+          <li class=""><a href="ConversationReport.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-staylinked"></i> &nbsp;Converson Reports</a></li>
+          </li>
+
+          <li class=""><a href="SocialMediaIntegration.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-quinscape"></i> &nbsp;Socal Media Integ</a></li>
+          <li class=""><a href="PaypalAndPaytrAccount.html" class="text-decoration-none text-white d-block"><i
+                class="fa-brands fa-paypal"></i> &nbsp;Paypal and Paytr Accountsr</a></li>
+          <li class=""><a href="#" class="text-decoration-none text-white d-block"><i class="fa-brands fa-mendeley"></i>
+              &nbsp;Sharm Managers</a></li>
+
+        </ul>
+      </div>
+
+      <!-- Sidebar last btn -->
+      <div class="text-center py-5">
+        <i class="fs-5 fa-solid fa-right-from-bracket"><a href="" class="mx-3 text-decoration-none text-white"
+            style="font-family: Bai Jamjuree;">Exit</a></i><br>
+      </div>
+
+    </div>
+
+    <!-- This is a another Side Section -->
+
+    <div class="content ms-1 mx-auto">
+
+      <button id="togler" class="btn px-1 py-0 open-btn fixed-top"><i
+          class="fa-solid fa-bars-staggered fs-4"></i></button>
+
+      <div class="first-line d-flex">
+
+        <h2 class="">Sherim Create Channel</h2>
+
+      </div>
+
+
+      <!-- Now The card section Start -->
+
+      <div class="">
+        <h3 class="mx-3">Add Channel</h3>
+        <div class="card1 mx-2" style="border: 1px solid black;">
+          <div class="container">
+
+            <form>
+
+              <div class="row py-3 d-flex">
+
+                <div class="col-md-1 text-center">
+                  <!-- Label for the file input -->
+                  <label class="circular-button" for="imageInput">
+                    <i class="fa-solid fa-user"></i>
+                  </label>
+                  <!-- Input field for selecting an image -->
+                  <input type="file" id="imageInput" accept="image/*">
+                </div>
+               
+                <div class="col-md-1 input-size">
+                  <label>owner</label>
+                  <select class="form-select text-muted">
+                    <option value="option2">Hasan Ozan Bayram</option>
+                    <option value="option3">Elif M Karanfil</option>
+                  </select>
+                </div>
+                <div class="col-md-1 input-size">
+                  <label>Record Type</label>
+                  <select class="form-select text-muted">
+                    <option value="option2">Individual</option>
+                    <option value="option3">Institutional</option>
+                  </select>
+                </div>
+
+                <div class="col-md-1 input-size">
+                  <label>Registration</label>
+                  <select class="form-select text-muted">
+                    <option value="option2">Pupliser</option>
+                    <option value="option3">Adversting</option>
+                  </select>
+                </div>
+
+                <div class="col-md-1 input-size">
+                  <label>Channel Type</label>
+                  <select class="form-select text-muted">
+                    <option value="option2">Phenomenon</option>
+                    <option value="option3">TV</option>
+                    <option value="option4">Newspaper</option>
+                    <option value="option5">Radyo</option>
+                    <option value="option6">Google Ads</option>
+                    <option value="option7">Web</option>
+                  </select>
+                </div>
+
+                <div class="col-md-1 input-size">
+                  <label>Channel Brand</label>
+                  <select class="form-select text-muted">
+                    <option value="fa-facebook-f" class="fab fa-lg">&#xf230;Facebook</option>
+                        <option value="fa-instagram" class="fab fa-lg">&#xf16d; Instagram</option>
+                        <option value="fa-pinterest" class="fab fa-lg">&#xf0d2; Pinterest</option>
+                        <option value="fa-twitter" class="fab fa-lg">&#xf099; Twitter</option>
+                        <option value="fa-linkedin" class="fab fa-lg">&#xf08c; Linkedin</option>
+                        <option value="fa-google-plus" class="fab fa-lg">&#xf0d5; Google</option>
+						<option value="fa-google-plus" class="fab fa-lg">&#xf282;; Web</option>
+                  </select>
+                </div>
+
+                <div class="col-md-2 input-size">
+                  <span style="font-size: 12px;">Channel Name</span>
+                  <input type="text" class="form-control">
+                </div>
+
+                <div class="col-md-2 input-size">
+                  <label style="font-size: 12px;">Channel Link</label>
+                  <input type="text" class="form-control">
+                </div>
+
+                <div class="col-md-2 input-size">
+                  <label style="font-size: 12px;">Channel Language</label>
+                  <input type="text" class="form-control">
+                </div>
+				 <div class="col-md-1 input-size">
+                  <label>Gender</label>
+                  <select class="form-select text-muted">
+                    <option value="option2">Man</option>
+                    <option value="option3">Woman</option>
+					<option value="option4">Unisex</option>
+					<option value="option5">Children</option>
+                  </select>
+                </div> 
+               
+                <div class="col-md-1 input-size">
+                  <label>Subscriber </label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-1 input-size">
+                  <label>Rating </label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-1 input-size">
+                  <label>Since Date</label>
+                  <input type="text" class="form-control">
+                </div>
+
+                <div class="col-md-2 input-size">
+                  <label>Categories</label>
+                  <input type="text" class="form-control">
+                </div>
+
+                <div class="col-md-1 input-size">
+                  <label>Price Unit </label>
+                  <select class="form-select text-muted">
+                    <option value="option2">seconds</option>
+                    <option value="option3">Minute</option>
+                    <option value="option4">Day</option>
+                    <option value="option5">Sharing</option>
+                    <option value="option5">Monthly</option>
+                  </select>
+                </div>
+                
+                <div class="col-md-1 input-size">
+                  <label>Unit Price</label>
+                  <input type="text" class="form-control">
+                </div>
+             
+                <div class="col-md-1 input-size">
+                  <label>Currency </label>
+                  <select class="form-select text-muted">
+                    <option value="option2">$</option>
+                    <option value="option3">€</option>
+                    <option value="option4">₺</option>
+                    <option value="option5">£</option>
+                    <option value="option6">¥ </option>
+                  </select>
+                </div>
+
+                <div class="col-md-2 input-size pt-3">
+                  <button class="btn btn fa-solid fa-plus text-white"
+                    style="background-color: var(--color-body)"></button>
+                </div>
+
+
+
+
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Table Section Start -->
+      <!-- Table Section Start -->
+      <div class="container-fluid py-3">
+        <h3>My Channels</h3>
+        <div class="table-responsive w-100 scrollable-table2 mx-auto">
+          <table class="table table-striped table-bordered">
+            <thead class="table-line" style="background-color: var(--color-body); color: #fff;">
+              <tr class="text-center">
+                <th>No</th>
+                <th>Profile</th>
+                <th>Owner/Company</th>
+                <th>Record Type </th>
+                <th>Registration</th>
+                <th>Area/Country</th>
+                <th>Channel Type</th>
+                <th>Channel Brand</th>
+                <th>Channel Name</th>
+                <th>Channel Link</th>
+                <th>Channel Language</th>
+                <th>Gender</th>
+                <th>Subscriber</th>
+                <th>Rating</th>
+                <th>Since Date</th>
+                <th>Categories</th>
+                <th>Price Unit</th>
+                <th>Unit Price</th>
+                <th>Currency</th>
+                <th>Activation</th>
+                <th>Transactions</th>
+              </tr>
+            </thead>
+
+            <tbody class="text-center table-line bg-white">
+              <tr>
+                <td>1</td>
+                <td>Image</td>
+                <td>Hasan Ozan Bayram</td>
+                <td>İndividual </td>
+                <td>Pupliser</td>
+                <td> EU/Poland </td>
+                <td>Phenomenon</td>
+                <td>Facebook</td>
+                <td>WorldColors</td>
+                <td>https://www.facebook.com/worldcolors_eu</td>
+                <td>English</td>
+                <td>Unisex</td>
+                <td>350.000</td>
+                <td>%60</td>
+                <td>10.10.2018 </td>
+                <td>Art</td>
+                <td>Sharing</td>
+                <td>0.12</td>
+                <td>$</td>
+                <td>
+                  <div class="dropdown open">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Option
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                      <button class="dropdown-item" href="#">Active<i
+                          class="fa-solid fa-pen-to-square text-success ps-5"></i></button>
+                      <button class="dropdown-item" href="#">Passives<i
+                          class="fa-solid fa-trash text-danger ps-5"></i></button>
+                </td>
+                <td>
+                  <a class="fa-solid fa-pen-to-square text-dark" href="#" data-bs-toggle="modal"
+                    data-bs-target="#duzenleid" data-toggle='modal' data-backdrop='false'></a>
+                </td>
+              </tr>
+            </tbody>
+            <!-- Icon Modal Box -->
+            <div class='modal fade' id='duzenleid' tabindex='-1' data-bs-backdrop='static' data-bs-keyboard='false'
+              aria-labelledby='exampleModalLgLabel' style='display: none;' aria-hidden='true'>
+              <div class='modal-dialog modal-lg'>
+                <div class='modal-content'>
+
+                  <div class='modal-header'>
+                    <h6 class='modal-title h6' id='exampleModalLgLabel'>My User Information</h6>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                  </div>
+                  <div class='modal-body'>
+                    <form method="post" autocomplete="off" id="form" data-parsley-validate>
+                      <div class='row'>
+                        <div class='col-md-12' align='center'>
+                          <img style="max-width: 100%;height:100px"
+                            src='http://bootdey.com/img/Content/avatar/avatar1.png' alt='logo' />
+                        </div>
+                        <!-- 2nd Row -->
+                        <tbody class="text-center table-line bg-white">
+                          <tr>
+                            <td>2</td>
+                            <td>Image</td>
+                            <td>Hasan Ozan Bayram</td>
+                            <td>İndividual </td>
+                            <td>Pupliser</td>
+                            <td> EU/Poland </td>
+                            <td>Phenomenon</td>
+                            <td>Facebook</td>
+                            <td>WorldColors</td>
+                            <td>https://www.facebook.com/worldcolors_eu</td>
+                            <td>English</td>
+                            <td>Unisex</td>
+                            <td>350.000</td>
+                            <td>%60</td>
+                            <td>10.10.2018 </td>
+                            <td>Art</td>
+                            <td>Sharing</td>
+                            <td>0.12</td>
+                            <td>$</td>
+                            <td>
+                              <div class="dropdown open">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="triggerId"
+                                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Option
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                  <button class="dropdown-item" href="#">Active<i
+                                      class="fa-solid fa-pen-to-square text-success ps-5"></i></button>
+                                  <button class="dropdown-item" href="#">Passives<i
+                                      class="fa-solid fa-trash text-danger ps-5"></i></button>
+                            </td>
+                            <td>
+                              <a class="fa-solid fa-pen-to-square text-dark" href="#" data-bs-toggle="modal"
+                                data-bs-target="#duzenleid" data-toggle='modal' data-backdrop='false'></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <!-- Icon Modal Box -->
+                        <div class='modal fade' id='duzenleid' tabindex='-1' data-bs-backdrop='static'
+                          data-bs-keyboard='false' aria-labelledby='exampleModalLgLabel' style='display: none;'
+                          aria-hidden='true'>
+                          <div class='modal-dialog modal-lg'>
+                            <div class='modal-content'>
+
+                              <div class='modal-header'>
+                                <h6 class='modal-title h6' id='exampleModalLgLabel'>My User Information</h6>
+                                <button type='button' class='btn-close' data-bs-dismiss='modal'
+                                  aria-label='Close'></button>
+                              </div>
+                              <div class='modal-body'>
+                                <form method="post" autocomplete="off" id="form" data-parsley-validate>
+                                  <div class='row'>
+                                    <div class='col-md-12' align='center'>
+                                      <img style="max-width: 100%;height:100px"
+                                        src='http://bootdey.com/img/Content/avatar/avatar1.png' alt='logo' />
+                                    </div>
+                                    <!-- 2nd Row -->
+                                    <tbody class="text-center table-line bg-white">
+                                      <tr>
+                                        <td>2</td>
+                                        <td>Image</td>
+                                        <td>Hasan Ozan Bayram</td>
+                                        <td>İndividual </td>
+                                        <td>Pupliser</td>
+                                        <td> EU/Poland </td>
+                                        <td>Phenomenon</td>
+                                        <td>Facebook</td>
+                                        <td>WorldColors</td>
+                                        <td>https://www.facebook.com/worldcolors_eu</td>
+                                        <td>English</td>
+                                        <td>Unisex</td>
+                                        <td>350.000</td>
+                                        <td>%60</td>
+                                        <td>10.10.2018 </td>
+                                        <td>Art</td>
+                                        <td>Sharing</td>
+                                        <td>0.12</td>
+                                        <td>$</td>
+                                        <td>
+                                          <div class="dropdown open">
+                                            <button class="btn btn-light dropdown-toggle" type="button" id="triggerId"
+                                              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Option
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="triggerId">
+                                              <button class="dropdown-item" href="#">Active<i
+                                                  class="fa-solid fa-pen-to-square text-success ps-5"></i></button>
+                                              <button class="dropdown-item" href="#">Passives<i
+                                                  class="fa-solid fa-trash text-danger ps-5"></i></button>
+                                        </td>
+                                        <td>
+                                          <a class="fa-solid fa-pen-to-square text-dark" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#duzenleid" data-toggle='modal' data-backdrop='false'></a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                    <!-- Icon Modal Box -->
+                                    <div class='modal fade' id='duzenleid' tabindex='-1' data-bs-backdrop='static'
+                                      data-bs-keyboard='false' aria-labelledby='exampleModalLgLabel'
+                                      style='display: none;' aria-hidden='true'>
+                                      <div class='modal-dialog modal-lg'>
+                                        <div class='modal-content'>
+
+                                          <div class='modal-header'>
+                                            <h6 class='modal-title h6' id='exampleModalLgLabel'>My User Information</h6>
+                                            <button type='button' class='btn-close' data-bs-dismiss='modal'
+                                              aria-label='Close'></button>
+                                          </div>
+                                          <div class='modal-body'>
+                                            <form method="post" autocomplete="off" id="form" data-parsley-validate>
+                                              <div class='row'>
+                                                <div class='col-md-12' align='center'>
+                                                  <img style="max-width: 100%;height:100px"
+                                                    src='http://bootdey.com/img/Content/avatar/avatar1.png'
+                                                    alt='logo' />
+                                                </div>
+                                                <!-- 2nd Row -->
+                                                <tbody class="text-center table-line bg-white">
+                                                  <tr>
+                                                    <td>3</td>
+                                                    <td>Image</td>
+                                                    <td>Hasan Ozan Bayram</td>
+                                                    <td>İndividual </td>
+                                                    <td>Pupliser</td>
+                                                    <td> EU/Poland </td>
+                                                    <td>Phenomenon</td>
+                                                    <td>Facebook</td>
+                                                    <td>WorldColors</td>
+                                                    <td>https://www.facebook.com/worldcolors_eu</td>
+                                                    <td>English</td>
+                                                    <td>Unisex</td>
+                                                    <td>350.000</td>
+                                                    <td>%60</td>
+                                                    <td>10.10.2018 </td>
+                                                    <td>Art</td>
+                                                    <td>Sharing</td>
+                                                    <td>0.12</td>
+                                                    <td>$</td>
+                                                    <td>
+                                                      <div class="dropdown open">
+                                                        <button class="btn btn-light dropdown-toggle" type="button"
+                                                          id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                          aria-expanded="false">
+                                                          Option
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                                                          <button class="dropdown-item" href="#">Active<i
+                                                              class="fa-solid fa-pen-to-square text-success ps-5"></i></button>
+                                                          <button class="dropdown-item" href="#">Passives<i
+                                                              class="fa-solid fa-trash text-danger ps-5"></i></button>
+                                                    </td>
+                                                    <td>
+                                                      <a class="fa-solid fa-pen-to-square text-dark" href="#"
+                                                        data-bs-toggle="modal" data-bs-target="#duzenleid"
+                                                        data-toggle='modal' data-backdrop='false'></a>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                                <!-- Icon Modal Box -->
+                                                <div class='modal fade' id='duzenleid' tabindex='-1'
+                                                  data-bs-backdrop='static' data-bs-keyboard='false'
+                                                  aria-labelledby='exampleModalLgLabel' style='display: none;'
+                                                  aria-hidden='true'>
+                                                  <div class='modal-dialog modal-lg'>
+                                                    <div class='modal-content'>
+
+                                                      <div class='modal-header'>
+                                                        <h6 class='modal-title h6' id='exampleModalLgLabel'>My User
+                                                          Information</h6>
+                                                        <button type='button' class='btn-close' data-bs-dismiss='modal'
+                                                          aria-label='Close'></button>
+                                                      </div>
+                                                      <div class='modal-body'>
+                                                        <form method="post" autocomplete="off" id="form"
+                                                          data-parsley-validate>
+                                                          <div class='row'>
+                                                            <div class='col-md-12' align='center'>
+                                                              <img style="max-width: 100%;height:100px"
+                                                                src='http://bootdey.com/img/Content/avatar/avatar1.png'
+                                                                alt='logo' />
+                                                            </div>
+                                                            <!-- 2nd Row -->
+                                                            <tbody class="text-center table-line bg-white">
+                                                              <tr>
+                                                                <td>4</td>
+                                                                <td>Image</td>
+                                                                <td>Hasan Ozan Bayram</td>
+                                                                <td>İndividual </td>
+                                                                <td>Pupliser</td>
+                                                                <td> EU/Poland </td>
+                                                                <td>Phenomenon</td>
+                                                                <td>Facebook</td>
+                                                                <td>WorldColors</td>
+                                                                <td>https://www.facebook.com/worldcolors_eu</td>
+                                                                <td>English</td>
+                                                                <td>Unisex</td>
+                                                                <td>350.000</td>
+                                                                <td>%60</td>
+                                                                <td>10.10.2018 </td>
+                                                                <td>Art</td>
+                                                                <td>Sharing</td>
+                                                                <td>0.12</td>
+                                                                <td>$</td>
+                                                                <td>
+                                                                  <div class="dropdown open">
+                                                                    <button class="btn btn-light dropdown-toggle"
+                                                                      type="button" id="triggerId"
+                                                                      data-bs-toggle="dropdown" aria-haspopup="true"
+                                                                      aria-expanded="false">
+                                                                      Option
+                                                                    </button>
+                                                                    <div class="dropdown-menu"
+                                                                      aria-labelledby="triggerId">
+                                                                      <button class="dropdown-item" href="#">Active<i
+                                                                          class="fa-solid fa-pen-to-square text-success ps-5"></i></button>
+                                                                      <button class="dropdown-item" href="#">Passives<i
+                                                                          class="fa-solid fa-trash text-danger ps-5"></i></button>
+                                                                </td>
+                                                                <td>
+                                                                  <a class="fa-solid fa-pen-to-square text-dark"
+                                                                    href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#duzenleid" data-toggle='modal'
+                                                                    data-backdrop='false'></a>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                            <!-- Icon Modal Box -->
+                                                            <div class='modal fade' id='duzenleid' tabindex='-1'
+                                                              data-bs-backdrop='static' data-bs-keyboard='false'
+                                                              aria-labelledby='exampleModalLgLabel'
+                                                              style='display: none;' aria-hidden='true'>
+                                                              <div class='modal-dialog modal-lg'>
+                                                                <div class='modal-content'>
+
+                                                                  <div class='modal-header'>
+                                                                    <h6 class='modal-title h6' id='exampleModalLgLabel'>
+                                                                      My User Information</h6>
+                                                                    <button type='button' class='btn-close'
+                                                                      data-bs-dismiss='modal'
+                                                                      aria-label='Close'></button>
+                                                                  </div>
+                                                                  <div class='modal-body'>
+                                                                    <form method="post" autocomplete="off" id="form"
+                                                                      data-parsley-validate>
+                                                                      <div class='row'>
+                                                                        <div class='col-md-12' align='center'>
+                                                                          <img style="max-width: 100%;height:100px"
+                                                                            src='http://bootdey.com/img/Content/avatar/avatar1.png'
+                                                                            alt='logo' />
+                                                                        </div>
+                                                                        <!-- 2nd Row -->
+                                                                        <tbody class="text-center table-line bg-white">
+                                                                          <tr>
+                                                                            <td>5</td>
+                                                                            <td>Image</td>
+                                                                            <td>Hasan Ozan Bayram</td>
+                                                                            <td>İndividual </td>
+                                                                            <td>Pupliser</td>
+                                                                            <td> EU/Poland </td>
+                                                                            <td>Phenomenon</td>
+                                                                            <td>Facebook</td>
+                                                                            <td>WorldColors</td>
+                                                                            <td>https://www.facebook.com/worldcolors_eu
+                                                                            </td>
+                                                                            <td>English</td>
+                                                                            <td>Unisex</td>
+                                                                            <td>350.000</td>
+                                                                            <td>%60</td>
+                                                                            <td>10.10.2018 </td>
+                                                                            <td>Art</td>
+                                                                            <td>Sharing</td>
+                                                                            <td>0.12</td>
+                                                                            <td>$</td>
+                                                                            <td>
+                                                                              <div class="dropdown open">
+                                                                                <button
+                                                                                  class="btn btn-light dropdown-toggle"
+                                                                                  type="button" id="triggerId"
+                                                                                  data-bs-toggle="dropdown"
+                                                                                  aria-haspopup="true"
+                                                                                  aria-expanded="false">
+                                                                                  Option
+                                                                                </button>
+                                                                                <div class="dropdown-menu"
+                                                                                  aria-labelledby="triggerId">
+                                                                                  <button class="dropdown-item"
+                                                                                    href="#">Active<i
+                                                                                      class="fa-solid fa-pen-to-square text-success ps-5"></i></button>
+                                                                                  <button class="dropdown-item"
+                                                                                    href="#">Passives<i
+                                                                                      class="fa-solid fa-trash text-danger ps-5"></i></button>
+                                                                            </td>
+                                                                            <td>
+                                                                              <a class="fa-solid fa-pen-to-square text-dark"
+                                                                                href="#" data-bs-toggle="modal"
+                                                                                data-bs-target="#duzenleid"
+                                                                                data-toggle='modal'
+                                                                                data-backdrop='false'></a>
+                                                                            </td>
+                                                                          </tr>
+                                                                        </tbody>
+                                                                        <!-- Icon Modal Box -->
+                                                                        <div class='modal fade' id='duzenleid'
+                                                                          tabindex='-1' data-bs-backdrop='static'
+                                                                          data-bs-keyboard='false'
+                                                                          aria-labelledby='exampleModalLgLabel'
+                                                                          style='display: none;' aria-hidden='true'>
+                                                                          <div class='modal-dialog modal-lg'>
+                                                                            <div class='modal-content'>
+
+                                                                              <div class='modal-header'>
+                                                                                <h6 class='modal-title h6'
+                                                                                  id='exampleModalLgLabel'>My User
+                                                                                  Information</h6>
+                                                                                <button type='button' class='btn-close'
+                                                                                  data-bs-dismiss='modal'
+                                                                                  aria-label='Close'></button>
+                                                                              </div>
+                                                                              <div class='modal-body'>
+                                                                                <form method="post" autocomplete="off"
+                                                                                  id="form" data-parsley-validate>
+                                                                                  <div class='row'>
+                                                                                    <div class='col-md-12'
+                                                                                      align='center'>
+                                                                                      <img
+                                                                                        style="max-width: 100%;height:100px"
+                                                                                        src='http://bootdey.com/img/Content/avatar/avatar1.png'
+                                                                                        alt='logo' />
+                                                                                    </div>
+                                                                                    <!-- 2nd Row -->
+                                                                                    <tbody
+                                                                                      class="text-center table-line bg-white">
+                                                                                      <tr>
+                                                                                        <td>6</td>
+                                                                                        <td>Image</td>
+                                                                                        <td>Hasan Ozan Bayram</td>
+                                                                                        <td>İndividual </td>
+                                                                                        <td>Pupliser</td>
+                                                                                        <td> EU/Poland </td>
+                                                                                        <td>Phenomenon</td>
+                                                                                        <td>Facebook</td>
+                                                                                        <td>WorldColors</td>
+                                                                                        <td>
+                                                                                          https://www.facebook.com/worldcolors_eu
+                                                                                        </td>
+                                                                                        <td>English</td>
+                                                                                        <td>Unisex</td>
+                                                                                        <td>350.000</td>
+                                                                                        <td>%60</td>
+                                                                                        <td>10.10.2018 </td>
+                                                                                        <td>Art</td>
+                                                                                        <td>Sharing</td>
+                                                                                        <td>0.12</td>
+                                                                                        <td>$</td>
+                                                                                        <td>
+                                                                                          <div class="dropdown open">
+                                                                                            <button
+                                                                                              class="btn btn-light dropdown-toggle"
+                                                                                              type="button"
+                                                                                              id="triggerId"
+                                                                                              data-bs-toggle="dropdown"
+                                                                                              aria-haspopup="true"
+                                                                                              aria-expanded="false">
+                                                                                              Option
+                                                                                            </button>
+                                                                                            <div class="dropdown-menu"
+                                                                                              aria-labelledby="triggerId">
+                                                                                              <button
+                                                                                                class="dropdown-item"
+                                                                                                href="#">Active<i
+                                                                                                  class="fa-solid fa-pen-to-square text-success ps-5"></i></button>
+                                                                                              <button
+                                                                                                class="dropdown-item"
+                                                                                                href="#">Passives<i
+                                                                                                  class="fa-solid fa-trash text-danger ps-5"></i></button>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                          <a class="fa-solid fa-pen-to-square text-dark"
+                                                                                            href="#"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#duzenleid"
+                                                                                            data-toggle='modal'
+                                                                                            data-backdrop='false'></a>
+                                                                                        </td>
+                                                                                      </tr>
+                                                                                    </tbody>
+                                                                                    <!-- Icon Modal Box -->
+                                                                                    <div class='modal fade'
+                                                                                      id='duzenleid' tabindex='-1'
+                                                                                      data-bs-backdrop='static'
+                                                                                      data-bs-keyboard='false'
+                                                                                      aria-labelledby='exampleModalLgLabel'
+                                                                                      style='display: none;'
+                                                                                      aria-hidden='true'>
+                                                                                      <div
+                                                                                        class='modal-dialog modal-lg'>
+                                                                                        <div class='modal-content'>
+
+                                                                                          <div class='modal-header'>
+                                                                                            <h6 class='modal-title h6'
+                                                                                              id='exampleModalLgLabel'>
+                                                                                              My User Information</h6>
+                                                                                            <button type='button'
+                                                                                              class='btn-close'
+                                                                                              data-bs-dismiss='modal'
+                                                                                              aria-label='Close'></button>
+                                                                                          </div>
+                                                                                          <div class='modal-body'>
+                                                                                            <form method="post"
+                                                                                              autocomplete="off"
+                                                                                              id="form"
+                                                                                              data-parsley-validate>
+                                                                                              <div class='row'>
+                                                                                                <div class='col-md-12'
+                                                                                                  align='center'>
+                                                                                                  <img
+                                                                                                    style="max-width: 100%;height:100px"
+                                                                                                    src='http://bootdey.com/img/Content/avatar/avatar1.png'
+                                                                                                    alt='logo' />
+                                                                                                </div>
+                                                                                                <!-- 2nd Row -->
+                                                                                                <tbody
+                                                                                                  class="text-center table-line bg-white">
+                                                                                                  <tr>
+                                                                                                    <td>7</td>
+                                                                                                    <td>Image</td>
+                                                                                                    <td>Hasan Ozan
+                                                                                                      Bayram</td>
+                                                                                                    <td>İndividual </td>
+                                                                                                    <td>Pupliser</td>
+                                                                                                    <td> EU/Poland </td>
+                                                                                                    <td>Phenomenon</td>
+                                                                                                    <td>Facebook</td>
+                                                                                                    <td>WorldColors</td>
+                                                                                                    <td>
+                                                                                                      https://www.facebook.com/worldcolors_eu
+                                                                                                    </td>
+                                                                                                    <td>English</td>
+                                                                                                    <td>Unisex</td>
+                                                                                                    <td>350.000</td>
+                                                                                                    <td>%60</td>
+                                                                                                    <td>10.10.2018 </td>
+                                                                                                    <td>Art</td>
+                                                                                                    <td>Sharing</td>
+                                                                                                    <td>0.12</td>
+                                                                                                    <td>$</td>
+                                                                                                    <td>
+                                                                                                      <div
+                                                                                                        class="dropdown open">
+                                                                                                        <button
+                                                                                                          class="btn btn-light dropdown-toggle"
+                                                                                                          type="button"
+                                                                                                          id="triggerId"
+                                                                                                          data-bs-toggle="dropdown"
+                                                                                                          aria-haspopup="true"
+                                                                                                          aria-expanded="false">
+                                                                                                          Option
+                                                                                                        </button>
+                                                                                                        <div
+                                                                                                          class="dropdown-menu"
+                                                                                                          aria-labelledby="triggerId">
+                                                                                                          <button
+                                                                                                            class="dropdown-item"
+                                                                                                            href="#">Active<i
+                                                                                                              class="fa-solid fa-pen-to-square text-success ps-5"></i></button>
+                                                                                                          <button
+                                                                                                            class="dropdown-item"
+                                                                                                            href="#">Passives<i
+                                                                                                              class="fa-solid fa-trash text-danger ps-5"></i></button>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                      <a class="fa-solid fa-pen-to-square text-dark"
+                                                                                                        href="#"
+                                                                                                        data-bs-toggle="modal"
+                                                                                                        data-bs-target="#duzenleid"
+                                                                                                        data-toggle='modal'
+                                                                                                        data-backdrop='false'></a>
+                                                                                                    </td>
+                                                                                                  </tr>
+                                                                                                </tbody>
+                                                                                                <!-- Icon Modal Box -->
+                                                                                                <div class='modal fade'
+                                                                                                  id='duzenleid'
+                                                                                                  tabindex='-1'
+                                                                                                  data-bs-backdrop='static'
+                                                                                                  data-bs-keyboard='false'
+                                                                                                  aria-labelledby='exampleModalLgLabel'
+                                                                                                  style='display: none;'
+                                                                                                  aria-hidden='true'>
+                                                                                                  <div
+                                                                                                    class='modal-dialog modal-lg'>
+                                                                                                    <div
+                                                                                                      class='modal-content'>
+
+                                                                                                      <div
+                                                                                                        class='modal-header'>
+                                                                                                        <h6
+                                                                                                          class='modal-title h6'
+                                                                                                          id='exampleModalLgLabel'>
+                                                                                                          My User
+                                                                                                          Information
+                                                                                                        </h6>
+                                                                                                        <button
+                                                                                                          type='button'
+                                                                                                          class='btn-close'
+                                                                                                          data-bs-dismiss='modal'
+                                                                                                          aria-label='Close'></button>
+                                                                                                      </div>
+                                                                                                      <div
+                                                                                                        class='modal-body'>
+                                                                                                        <form
+                                                                                                          method="post"
+                                                                                                          autocomplete="off"
+                                                                                                          id="form"
+                                                                                                          data-parsley-validate>
+                                                                                                          <div
+                                                                                                            class='row'>
+                                                                                                            <div
+                                                                                                              class='col-md-12'
+                                                                                                              align='center'>
+                                                                                                              <img
+                                                                                                                style="max-width: 100%;height:100px"
+                                                                                                                src='http://bootdey.com/img/Content/avatar/avatar1.png'
+                                                                                                                alt='logo' />
+                                                                                                            </div>
+                                                                                                            <!-- 2nd Row -->
+                                                                                                            <tbody
+                                                                                                              class="text-center table-line bg-white">
+                                                                                                              <tr>
+                                                                                                                <td>8
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  Image
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  Hasan
+                                                                                                                  Ozan
+                                                                                                                  Bayram
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  İndividual
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  Pupliser
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  EU/Poland
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  Phenomenon
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  Facebook
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  WorldColors
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  https://www.facebook.com/worldcolors_eu
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  English
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  Unisex
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  350.000
+                                                                                                                </td>
+                                                                                                                <td>%60
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  10.10.2018
+                                                                                                                </td>
+                                                                                                                <td>Art
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  Sharing
+                                                                                                                </td>
+                                                                                                                <td>0.12
+                                                                                                                </td>
+                                                                                                                <td>$
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  <div
+                                                                                                                    class="dropdown open">
+                                                                                                                    <button
+                                                                                                                      class="btn btn-light dropdown-toggle"
+                                                                                                                      type="button"
+                                                                                                                      id="triggerId"
+                                                                                                                      data-bs-toggle="dropdown"
+                                                                                                                      aria-haspopup="true"
+                                                                                                                      aria-expanded="false">
+                                                                                                                      Option
+                                                                                                                    </button>
+                                                                                                                    <div
+                                                                                                                      class="dropdown-menu"
+                                                                                                                      aria-labelledby="triggerId">
+                                                                                                                      <button
+                                                                                                                        class="dropdown-item"
+                                                                                                                        href="#">Active<i
+                                                                                                                          class="fa-solid fa-pen-to-square text-success ps-5"></i></button>
+                                                                                                                      <button
+                                                                                                                        class="dropdown-item"
+                                                                                                                        href="#">Passives<i
+                                                                                                                          class="fa-solid fa-trash text-danger ps-5"></i></button>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                  <a class="fa-solid fa-pen-to-square text-dark"
+                                                                                                                    href="#"
+                                                                                                                    data-bs-toggle="modal"
+                                                                                                                    data-bs-target="#duzenleid"
+                                                                                                                    data-toggle='modal'
+                                                                                                                    data-backdrop='false'></a>
+                                                                                                                </td>
+                                                                                                              </tr>
+                                                                                                            </tbody>
+                                                                                                            <!-- Icon Modal Box -->
+                                                                                                            <div
+                                                                                                              class='modal fade'
+                                                                                                              id='duzenleid'
+                                                                                                              tabindex='-1'
+                                                                                                              data-bs-backdrop='static'
+                                                                                                              data-bs-keyboard='false'
+                                                                                                              aria-labelledby='exampleModalLgLabel'
+                                                                                                              style='display: none;'
+                                                                                                              aria-hidden='true'>
+                                                                                                              <div
+                                                                                                                class='modal-dialog modal-lg'>
+                                                                                                                <div
+                                                                                                                  class='modal-content'>
+
+                                                                                                                  <div
+                                                                                                                    class='modal-header'>
+                                                                                                                    <h6
+                                                                                                                      class='modal-title h6'
+                                                                                                                      id='exampleModalLgLabel'>
+                                                                                                                      My
+                                                                                                                      User
+                                                                                                                      Information
+                                                                                                                    </h6>
+                                                                                                                    <button
+                                                                                                                      type='button'
+                                                                                                                      class='btn-close'
+                                                                                                                      data-bs-dismiss='modal'
+                                                                                                                      aria-label='Close'></button>
+                                                                                                                  </div>
+                                                                                                                  <div
+                                                                                                                    class='modal-body'>
+                                                                                                                    <form
+                                                                                                                      method="post"
+                                                                                                                      autocomplete="off"
+                                                                                                                      id="form"
+                                                                                                                      data-parsley-validate>
+                                                                                                                      <div
+                                                                                                                        class='row'>
+                                                                                                                        <div
+                                                                                                                          class='col-md-12'
+                                                                                                                          align='center'>
+                                                                                                                          <img
+                                                                                                                            style="max-width: 100%;height:100px"
+                                                                                                                            src='http://bootdey.com/img/Content/avatar/avatar1.png'
+                                                                                                                            alt='logo' />
+                                                                                                                        </div>
+                                                                                                                        <!-- 2nd Row -->
+                                                                                                                        <tbody
+                                                                                                                          class="text-center table-line bg-white">
+                                                                                                                          <tr>
+                                                                                                                            <td>
+                                                                                                                              9
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              Image
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              Hasan
+                                                                                                                              Ozan
+                                                                                                                              Bayram
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              İndividual
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              Pupliser
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              EU/Poland
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              Phenomenon
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              Facebook
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              WorldColors
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              https://www.facebook.com/worldcolors_eu
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              English
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              Unisex
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              350.000
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              %60
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              10.10.2018
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              Art
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              Sharing
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              0.12
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              $
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              <div
+                                                                                                                                class="dropdown open">
+                                                                                                                                <button
+                                                                                                                                  class="btn btn-light dropdown-toggle"
+                                                                                                                                  type="button"
+                                                                                                                                  id="triggerId"
+                                                                                                                                  data-bs-toggle="dropdown"
+                                                                                                                                  aria-haspopup="true"
+                                                                                                                                  aria-expanded="false">
+                                                                                                                                  Option
+                                                                                                                                </button>
+                                                                                                                                <div
+                                                                                                                                  class="dropdown-menu"
+                                                                                                                                  aria-labelledby="triggerId">
+                                                                                                                                  <button
+                                                                                                                                    class="dropdown-item"
+                                                                                                                                    href="#">Active<i
+                                                                                                                                      class="fa-solid fa-pen-to-square text-success ps-5"></i></button>
+                                                                                                                                  <button
+                                                                                                                                    class="dropdown-item"
+                                                                                                                                    href="#">Passives<i
+                                                                                                                                      class="fa-solid fa-trash text-danger ps-5"></i></button>
+                                                                                                                            </td>
+                                                                                                                            <td>
+                                                                                                                              <a class="fa-solid fa-pen-to-square text-dark"
+                                                                                                                                href="#"
+                                                                                                                                data-bs-toggle="modal"
+                                                                                                                                data-bs-target="#duzenleid"
+                                                                                                                                data-toggle='modal'
+                                                                                                                                data-backdrop='false'></a>
+                                                                                                                            </td>
+                                                                                                                          </tr>
+                                                                                                                        </tbody>
+                                                                                                                        <!-- Icon Modal Box -->
+                                                                                                                        <div
+                                                                                                                          class='modal fade'
+                                                                                                                          id='duzenleid'
+                                                                                                                          tabindex='-1'
+                                                                                                                          data-bs-backdrop='static'
+                                                                                                                          data-bs-keyboard='false'
+                                                                                                                          aria-labelledby='exampleModalLgLabel'
+                                                                                                                          style='display: none;'
+                                                                                                                          aria-hidden='true'>
+                                                                                                                          <div
+                                                                                                                            class='modal-dialog modal-lg'>
+                                                                                                                            <div
+                                                                                                                              class='modal-content'>
+
+                                                                                                                              <div
+                                                                                                                                class='modal-header'>
+                                                                                                                                <h6
+                                                                                                                                  class='modal-title h6'
+                                                                                                                                  id='exampleModalLgLabel'>
+                                                                                                                                  My
+                                                                                                                                  User
+                                                                                                                                  Information
+                                                                                                                                </h6>
+                                                                                                                                <button
+                                                                                                                                  type='button'
+                                                                                                                                  class='btn-close'
+                                                                                                                                  data-bs-dismiss='modal'
+                                                                                                                                  aria-label='Close'></button>
+                                                                                                                              </div>
+                                                                                                                              <div
+                                                                                                                                class='modal-body'>
+                                                                                                                                <form
+                                                                                                                                  method="post"
+                                                                                                                                  autocomplete="off"
+                                                                                                                                  id="form"
+                                                                                                                                  data-parsley-validate>
+                                                                                                                                  <div
+                                                                                                                                    class='row'>
+                                                                                                                                    <div
+                                                                                                                                      class='col-md-12'
+                                                                                                                                      align='center'>
+                                                                                                                                      <img
+                                                                                                                                        style="max-width: 100%;height:100px"
+                                                                                                                                        src='http://bootdey.com/img/Content/avatar/avatar1.png'
+                                                                                                                                        alt='logo' />
+                                                                                                                                    </div>
+                                                                                                                                    <!-- 2nd Row -->
+                                                                                                                                    <tbody
+                                                                                                                                      class="text-center table-line bg-white">
+                                                                                                                                      <tr>
+                                                                                                                                        <td>
+                                                                                                                                          10
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          Image
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          Hasan
+                                                                                                                                          Ozan
+                                                                                                                                          Bayram
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          İndividual
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          Pupliser
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          EU/Poland
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          Phenomenon
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          Facebook
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          WorldColors
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          https://www.facebook.com/worldcolors_eu
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          English
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          Unisex
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          350.000
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          %60
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          10.10.2018
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          Art
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          Sharing
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          0.12
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          $
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          <div
+                                                                                                                                            class="dropdown open">
+                                                                                                                                            <button
+                                                                                                                                              class="btn btn-light dropdown-toggle"
+                                                                                                                                              type="button"
+                                                                                                                                              id="triggerId"
+                                                                                                                                              data-bs-toggle="dropdown"
+                                                                                                                                              aria-haspopup="true"
+                                                                                                                                              aria-expanded="false">
+                                                                                                                                              Option
+                                                                                                                                            </button>
+                                                                                                                                            <div
+                                                                                                                                              class="dropdown-menu"
+                                                                                                                                              aria-labelledby="triggerId">
+                                                                                                                                              <button
+                                                                                                                                                class="dropdown-item"
+                                                                                                                                                href="#">Active<i
+                                                                                                                                                  class="fa-solid fa-pen-to-square text-success ps-5"></i></button>
+                                                                                                                                              <button
+                                                                                                                                                class="dropdown-item"
+                                                                                                                                                href="#">Passives<i
+                                                                                                                                                  class="fa-solid fa-trash text-danger ps-5"></i></button>
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                          <a class="fa-solid fa-pen-to-square text-dark"
+                                                                                                                                            href="#"
+                                                                                                                                            data-bs-toggle="modal"
+                                                                                                                                            data-bs-target="#duzenleid"
+                                                                                                                                            data-toggle='modal'
+                                                                                                                                            data-backdrop='false'></a>
+                                                                                                                                        </td>
+                                                                                                                                      </tr>
+                                                                                                                                    </tbody>
+                                                                                                                                    <!-- Icon Modal Box -->
+                                                                                                                                    <div
+                                                                                                                                      class='modal fade'
+                                                                                                                                      id='duzenleid'
+                                                                                                                                      tabindex='-1'
+                                                                                                                                      data-bs-backdrop='static'
+                                                                                                                                      data-bs-keyboard='false'
+                                                                                                                                      aria-labelledby='exampleModalLgLabel'
+                                                                                                                                      style='display: none;'
+                                                                                                                                      aria-hidden='true'>
+                                                                                                                                      <div
+                                                                                                                                        class='modal-dialog modal-lg'>
+                                                                                                                                        <div
+                                                                                                                                          class='modal-content'>
+
+                                                                                                                                          <div
+                                                                                                                                            class='modal-header'>
+                                                                                                                                            <h6
+                                                                                                                                              class='modal-title h6'
+                                                                                                                                              id='exampleModalLgLabel'>
+                                                                                                                                              My
+                                                                                                                                              User
+                                                                                                                                              Information
+                                                                                                                                            </h6>
+                                                                                                                                            <button
+                                                                                                                                              type='button'
+                                                                                                                                              class='btn-close'
+                                                                                                                                              data-bs-dismiss='modal'
+                                                                                                                                              aria-label='Close'></button>
+                                                                                                                                          </div>
+                                                                                                                                          <div
+                                                                                                                                            class='modal-body'>
+                                                                                                                                            <form
+                                                                                                                                              method="post"
+                                                                                                                                              autocomplete="off"
+                                                                                                                                              id="form"
+                                                                                                                                              data-parsley-validate>
+                                                                                                                                              <div
+                                                                                                                                                class='row'>
+                                                                                                                                                <div
+                                                                                                                                                  class='col-md-12'
+                                                                                                                                                  align='center'>
+                                                                                                                                                  <img
+                                                                                                                                                    style="max-width: 100%;height:100px"
+                                                                                                                                                    src='http://bootdey.com/img/Content/avatar/avatar1.png'
+                                                                                                                                                    alt='logo' />
+                                                                                                                                                </div>
+                                                                                                                                                <!-- 2nd Row -->
+                                                                                                                                                <tbody
+                                                                                                                                                  class="text-center table-line bg-white">
+                                                                                                                                                  <tr>
+                                                                                                                                                    <td>
+                                                                                                                                                      11
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      Image
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      Hasan
+                                                                                                                                                      Ozan
+                                                                                                                                                      Bayram
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      İndividual
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      Pupliser
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      EU/Poland
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      Phenomenon
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      Facebook
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      WorldColors
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      https://www.facebook.com/worldcolors_eu
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      English
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      Unisex
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      350.000
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      %60
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      10.10.2018
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      Art
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      Sharing
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      0.12
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      $
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      <div
+                                                                                                                                                        class="dropdown open">
+                                                                                                                                                        <button
+                                                                                                                                                          class="btn btn-light dropdown-toggle"
+                                                                                                                                                          type="button"
+                                                                                                                                                          id="triggerId"
+                                                                                                                                                          data-bs-toggle="dropdown"
+                                                                                                                                                          aria-haspopup="true"
+                                                                                                                                                          aria-expanded="false">
+                                                                                                                                                          Option
+                                                                                                                                                        </button>
+                                                                                                                                                        <div
+                                                                                                                                                          class="dropdown-menu"
+                                                                                                                                                          aria-labelledby="triggerId">
+                                                                                                                                                          <button
+                                                                                                                                                            class="dropdown-item"
+                                                                                                                                                            href="#">Active<i
+                                                                                                                                                              class="fa-solid fa-pen-to-square text-success ps-5"></i></button>
+                                                                                                                                                          <button
+                                                                                                                                                            class="dropdown-item"
+                                                                                                                                                            href="#">Passives<i
+                                                                                                                                                              class="fa-solid fa-trash text-danger ps-5"></i></button>
+                                                                                                                                                    </td>
+                                                                                                                                                    <td>
+                                                                                                                                                      <a class="fa-solid fa-pen-to-square text-dark"
+                                                                                                                                                        href="#"
+                                                                                                                                                        data-bs-toggle="modal"
+                                                                                                                                                        data-bs-target="#duzenleid"
+                                                                                                                                                        data-toggle='modal'
+                                                                                                                                                        data-backdrop='false'></a>
+                                                                                                                                                    </td>
+                                                                                                                                                  </tr>
+                                                                                                                                                </tbody>
+                                                                                                                                                <!-- Icon Modal Box -->
+                                                                                                                                                <div
+                                                                                                                                                  class='modal fade'
+                                                                                                                                                  id='duzenleid'
+                                                                                                                                                  tabindex='-1'
+                                                                                                                                                  data-bs-backdrop='static'
+                                                                                                                                                  data-bs-keyboard='false'
+                                                                                                                                                  aria-labelledby='exampleModalLgLabel'
+                                                                                                                                                  style='display: none;'
+                                                                                                                                                  aria-hidden='true'>
+                                                                                                                                                  <div
+                                                                                                                                                    class='modal-dialog modal-lg'>
+                                                                                                                                                    <div
+                                                                                                                                                      class='modal-content'>
+
+                                                                                                                                                      <div
+                                                                                                                                                        class='modal-header'>
+                                                                                                                                                        <h6
+                                                                                                                                                          class='modal-title h6'
+                                                                                                                                                          id='exampleModalLgLabel'>
+                                                                                                                                                          My
+                                                                                                                                                          User
+                                                                                                                                                          Information
+                                                                                                                                                        </h6>
+                                                                                                                                                        <button
+                                                                                                                                                          type='button'
+                                                                                                                                                          class='btn-close'
+                                                                                                                                                          data-bs-dismiss='modal'
+                                                                                                                                                          aria-label='Close'></button>
+                                                                                                                                                      </div>
+                                                                                                                                                      <div
+                                                                                                                                                        class='modal-body'>
+                                                                                                                                                        <form
+                                                                                                                                                          method="post"
+                                                                                                                                                          autocomplete="off"
+                                                                                                                                                          id="form"
+                                                                                                                                                          data-parsley-validate>
+                                                                                                                                                          <div
+                                                                                                                                                            class='row'>
+                                                                                                                                                            <div
+                                                                                                                                                              class='col-md-12'
+                                                                                                                                                              align='center'>
+                                                                                                                                                              <img
+                                                                                                                                                                style="max-width: 100%;height:100px"
+                                                                                                                                                                src='http://bootdey.com/img/Content/avatar/avatar1.png'
+                                                                                                                                                                alt='logo' />
+                                                                                                                                                            </div>
+                                                                                                                                                            <!-- 2nd Row -->
+                                                                                                                                                            <tbody
+                                                                                                                                                              class="text-center table-line bg-white">
+                                                                                                                                                              <tr>
+                                                                                                                                                                <td>
+                                                                                                                                                                  12
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  Image
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  Hasan
+                                                                                                                                                                  Ozan
+                                                                                                                                                                  Bayram
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  İndividual
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  Pupliser
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  EU/Poland
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  Phenomenon
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  Facebook
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  WorldColors
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  https://www.facebook.com/worldcolors_eu
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  English
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  Unisex
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  350.000
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  %60
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  10.10.2018
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  Art
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  Sharing
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  0.12
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  $
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  <div
+                                                                                                                                                                    class="dropdown open">
+                                                                                                                                                                    <button
+                                                                                                                                                                      class="btn btn-light dropdown-toggle"
+                                                                                                                                                                      type="button"
+                                                                                                                                                                      id="triggerId"
+                                                                                                                                                                      data-bs-toggle="dropdown"
+                                                                                                                                                                      aria-haspopup="true"
+                                                                                                                                                                      aria-expanded="false">
+                                                                                                                                                                      Option
+                                                                                                                                                                    </button>
+                                                                                                                                                                    <div
+                                                                                                                                                                      class="dropdown-menu"
+                                                                                                                                                                      aria-labelledby="triggerId">
+                                                                                                                                                                      <button
+                                                                                                                                                                        class="dropdown-item"
+                                                                                                                                                                        href="#">Active<i
+                                                                                                                                                                          class="fa-solid fa-pen-to-square text-success ps-5"></i></button>
+                                                                                                                                                                      <button
+                                                                                                                                                                        class="dropdown-item"
+                                                                                                                                                                        href="#">Passives<i
+                                                                                                                                                                          class="fa-solid fa-trash text-danger ps-5"></i></button>
+                                                                                                                                                                </td>
+                                                                                                                                                                <td>
+                                                                                                                                                                  <a class="fa-solid fa-pen-to-square text-dark"
+                                                                                                                                                                    href="#"
+                                                                                                                                                                    data-bs-toggle="modal"
+                                                                                                                                                                    data-bs-target="#duzenleid"
+                                                                                                                                                                    data-toggle='modal'
+                                                                                                                                                                    data-backdrop='false'></a>
+                                                                                                                                                                </td>
+                                                                                                                                                              </tr>
+                                                                                                                                                            </tbody>
+                                                                                                                                                            <!-- Icon Modal Box -->
+                                                                                                                                                            <div
+                                                                                                                                                              class='modal fade'
+                                                                                                                                                              id='duzenleid'
+                                                                                                                                                              tabindex='-1'
+                                                                                                                                                              data-bs-backdrop='static'
+                                                                                                                                                              data-bs-keyboard='false'
+                                                                                                                                                              aria-labelledby='exampleModalLgLabel'
+                                                                                                                                                              style='display: none;'
+                                                                                                                                                              aria-hidden='true'>
+                                                                                                                                                              <div
+                                                                                                                                                                class='modal-dialog modal-lg'>
+                                                                                                                                                                <div
+                                                                                                                                                                  class='modal-content'>
+
+                                                                                                                                                                  <div
+                                                                                                                                                                    class='modal-header'>
+                                                                                                                                                                    <h6
+                                                                                                                                                                      class='modal-title h6'
+                                                                                                                                                                      id='exampleModalLgLabel'>
+                                                                                                                                                                      My
+                                                                                                                                                                      User
+                                                                                                                                                                      Information
+                                                                                                                                                                    </h6>
+                                                                                                                                                                    <button
+                                                                                                                                                                      type='button'
+                                                                                                                                                                      class='btn-close'
+                                                                                                                                                                      data-bs-dismiss='modal'
+                                                                                                                                                                      aria-label='Close'></button>
+                                                                                                                                                                  </div>
+                                                                                                                                                                  <div
+                                                                                                                                                                    class='modal-body'>
+                                                                                                                                                                    <form
+                                                                                                                                                                      method="post"
+                                                                                                                                                                      autocomplete="off"
+                                                                                                                                                                      id="form"
+                                                                                                                                                                      data-parsley-validate>
+                                                                                                                                                                      <div
+                                                                                                                                                                        class='row'>
+                                                                                                                                                                        <div
+                                                                                                                                                                          class='col-md-12'
+                                                                                                                                                                          align='center'>
+                                                                                                                                                                          <img
+                                                                                                                                                                            style="max-width: 100%;height:100px"
+                                                                                                                                                                            src='http://bootdey.com/img/Content/avatar/avatar1.png'
+                                                                                                                                                                            alt='logo' />
+                                                                                                                                                                        </div>
+          </table>
+          </table>
+        </div>
+
+        <!-- Blog Content Div Here -->
+      </div>
+
+
+    </div><br>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+      </script>
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

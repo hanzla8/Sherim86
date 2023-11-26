@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Social Media Integration</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/fav.jpg" type="image/x-icon">
+
+
+    <!-- font awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Content Line */
+
+        .first-line {
+            max-width: 100%;
+            height: 50px;
+            background-color: var(--color-body);
+            color: #fff;
+        }
+
+        /* These Two Button Styling */
+
+        #home-bar {
+            padding: 100px 0px;
+        }
+
+
+
+        /* Sidebar Button */
+        #togler {
+            left: auto;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <!-- Second Seaction Starting Here-->
+    <div id="first-con" class="main-container d-flex">
+        <div class="sidebar" id="side_nav">
+            <div class="header-box">
+                <h1 class="fs-4 pt-2 text-center text-white"><a class="text-decoration-none text-white"
+                        href="index.html">SHERIM</a>
+                </h1>
+                <div id="board-circle" class="mx-auto">
+                    <h4 class="mx-auto text-center pt-5">Malldia</h4>
+                </div>
+                <button class="btn d-md-none offset-sm-10 d-block close-btn px-1 py-0 text-white"><i
+                        class="fa-solid fa-bars-staggered"></i></button>
+            </div>
+
+            <div class="text-center pt-1">
+                <h6 class="text-white">EU/PL48/5475447</h6>
+                <p class="text-white">Elf Karanfil</p>
+            </div>
+
+            <!-- UL Li Scroller Table -->
+            <div class="scrollable-table1">
+                <ul class="list-unstyled px-2 py-3">
+                    <!-- Sidebar Links -->
+                    <li class=""><a href="BroadcastUsers.html" class="text-decoration-none text-white d-block"><i
+                                class="fa-solid fa-bullhorn"></i>&nbsp;Broadcast users</a>
+                    </li>
+
+                    <!-- 1st Drop Down List -->
+                    <button class="dropdown-btn" id="dropdown1">Templates</button>
+                    <div class="dropdown-content" id="content1">
+                        <li class=""><a href="CreateBrandTamplate.html" class="">Create a Brand Template</a></li>
+                        <li class=""></li><a href="DefineBrandTamplate.html" class="">Define the Brand Template</a>
+                    </div>
+
+                    <li class=""><a href="AddChannel.html" class="text-decoration-none text-white d-block"><i
+                                class="fa-solid fa-shop"></i> &nbsp;Add Channel</a></li>
+
+                    <!-- Second Drop Down -->
+
+                    <button class="dropdown-btn" id="dropdown2">Ads</button>
+                    <div class="dropdown-content" id="content2">
+                        <li class=""><a href="CreateAdvertsngPackage.html">Create Advertsng Package</a></li>
+                        <li class=""><a href="ReadyAdvertisingPackages.html" class="">Ready Advertsng Packages</a>
+                        </li>
+                        <li class=""><a href="AdvertsngPool.html" class="">Advertsng Pool</a></li>
+                        <li class=""><a href="UploadAd.html" class="">Upload Ad</a></li>
+                    </div>
+
+
+                    <li class=""><a href="IncomeOrder.html" class="text-decoration-none text-white d-block"><i
+                                class="fa-solid fa-shop"></i> &nbsp;Incomng Order</a></li>
+
+                    <!-- Third DropDown List -->
+                    <button class="dropdown-btn" id="dropdown3">Accountng</button>
+                    <div class="dropdown-content" id="content3">
+                        <li class=""><a href="IncomePaymentStatement.html" class="">Incomng
+                                Payments&Statements</a></li>
+                        <li class=""><a href="Pending&Outing.html">Pendng & Outgong Transfer</a></li>
+                        <li class=""><a href="#">Orders</a></li>
+                        <li class=""><a href="CostTable.html">Cost table</a></li>
+                        <li class=""><a href="MalldiaSarimIncome.html" class="">Mallda Serhm Income</a></li>
+                        <li class=""><a href="PublisherSerimIncome.html" class="">Publsher Serhm Income</a></li>
+                        <li class=""><a href="AdvertisingExpence.html" class="">Advertser Expenses</a></li>
+                        <li class=""><a href="ConversationReport.html" class="">Converson Reports</a></li>
+                        </li>
+                    </div>
+
+                    <!-- Fourth DropDown List -->
+                    <button class="dropdown-btn" id="dropdown4">Integratons</button>
+                    <div class="dropdown-content" id="content4">
+                        <li class=""><a href="SocialMediaIntegration.html" class="active">Socal Meda Integraton</a></li>
+                        <li class=""><a href="PaypalAndPaytrAccount.html" class="">Paypal and Paytr Accountsr</a></li>
+                        <li class=""><a href="#">Sharm Managers</a></li>
+                    </div>
+
+                </ul>
+            </div>
+
+            <!-- Sidebar last btn -->
+            <div class="text-center py-5">
+                <i class="fs-5 fa-solid fa-right-from-bracket"><a href="" class="mx-3 text-decoration-none text-white"
+                        style="font-family: Bai Jamjuree;">Exit</a></i><br>
+            </div>
+
+        </div>
+
+        <!-- This is a another Side Section -->
+
+        <div class="content ms-1 mx-auto w-100">
+
+            <div class="first-line d-flex">
+                <h3 class="">Publisher Brand Channel Integration</h3>
+
+                <button id="togler" class="btn px-1 py-0 open-btn fixed-top"><i
+                        class="fa-solid fa-bars-staggered fs-4"></i></button>
+            </div>
+
+            
+
+        </div>
+
+
+
+
+
+        <!-- Blog Content Div Here -->
+    </div>
+
+
+    </div><br>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
